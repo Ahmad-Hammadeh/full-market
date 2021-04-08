@@ -1,0 +1,18 @@
+.breadcrumbs {
+    padding-top: $short-distance;
+    padding-bottom: $short-distance;
+    background-color: $sub-white;
+    .container {
+        display: flex;
+        align-items: center;
+        .breadcrumbs-box {
+            flex: 1;
+        }
+        .search-box input[type="search"] {
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        }
+    }
+}

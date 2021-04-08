@@ -1,0 +1,98 @@
+.cart-page {
+    min-height: $page-with-breadcrumb-height;
+    .cart-total {
+        padding: $little-distance;
+        background-color: $sub-white;
+        display: flex;
+        text-align: center;
+        @media (max-width: $phone-width) {
+            display: block;
+        }
+        .description {
+            flex: 1;
+            @media (max-width: $phone-width) {
+                margin-bottom: $short-distance;
+            }
+        }
+        .total-table {
+            flex: 2;
+            text-align: $left;
+            table {
+                margin-#{$left}: auto;
+                @media (max-width: $phone-width) {
+                    margin-#{$left}: unset;
+                }
+                td {
+                    padding: 5px 10px;
+                }
+                .discount {
+                    td {
+                        &:first-of-type {
+                            form {
+                                display: inline-block;
+                                margin-right: 10px;
+                                button[type="submit"] {
+                                    border: none;
+                                    border-radius: 10px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                tfoot {
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .have-code-container {
+        .have-code {
+            display: block;
+            margin-bottom: $little-distance;
+            color: $black;
+        }
+        .code-form {
+            display: inline-block;
+            border: 1px solid $black;
+            padding: 10px;
+            form {
+                display: flex;
+                input {
+                    height: 36px;
+                }
+                button[type=submit] {
+                    border: 1px solid $black;
+                    padding: 5px 30px;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: $light-green;
+                        color: #fff;
+                        border: 1px solid $light-green;
+                    }
+                }
+            }
+        }
+    }
+    .cart-actions {
+        overflow: hidden;
+        a {
+            &:first-of-type {
+                float: $left;
+            }
+            &:last-of-type {
+                float: $right;
+            }
+        }
+    }
+    .continue-shopping,
+    .items-count,
+    .cart-products,
+    .have-code-container,
+    .cart-total,
+    .cart-actions,
+    .for-later {
+        margin-bottom: $short-distance;
+    }
+}

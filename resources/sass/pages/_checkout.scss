@@ -1,0 +1,74 @@
+.checkout {
+    h1 {
+        margin-bottom: $short-distance;
+    }
+    .personal-details {
+        @media (max-width: $phone-width) {
+            margin-bottom: $medium-distance;
+        }
+        .payment-methods {
+            margin-bottom: $short-distance;
+            h2 {
+                margin-bottom: $short-distance;
+            }
+            .nav-tabs {
+                margin-bottom: $short-distance;
+                .nav-item {
+                    input[type="radio"] {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .order-list {
+        margin-bottom: $little-distance;
+        .total-table {
+            table {
+                width: 100%;
+                @media (max-width: $phone-width) {
+                    width: 80%;
+                    margin: auto;
+                }
+                tr {
+                    display: flex;
+                    justify-content: space-between;
+                    td {
+                        padding: 5px 0;
+                        &:last-of-type {
+                            text-align: right;
+                        }
+                    }
+                }
+                tfoot {
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .StripeElement {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .StripeElement--focus {
+        box-shadow: 0 1px 3px 0 $blue;
+    }
+    .StripeElement--invalid {
+        border-color: #fa755a;
+    }
+    .StripeElement--webkit-autofill {
+        background-color: #fefde5 !important;
+    }
+}

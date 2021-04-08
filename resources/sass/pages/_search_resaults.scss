@@ -1,0 +1,15 @@
+.search-page {
+    min-height: $page-height;
+    .search-header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .search-count {
+        display: block;
+        margin-bottom: $short-distance;
+        color: $pink;
+    }
+    .message {
+        margin-top: $short-distance;
+    }
+}

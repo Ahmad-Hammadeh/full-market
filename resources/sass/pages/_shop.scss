@@ -1,0 +1,25 @@
+.shop {
+    .show-by {
+        margin-bottom: $short-distance;
+        &>p {
+            margin-bottom: 10px;
+        }
+        .description {
+            @media (max-width: $phone-width) {
+                display: block;
+                margin-bottom: $little-distance;
+            }
+        }
+        .prices {
+            text-align: $right;
+            a {
+                &.active {
+                    color: $indigo
+                }
+            }
+        }
+    }
+    .products {
+        // margin-bottom: $short-distance;
+    }
+}

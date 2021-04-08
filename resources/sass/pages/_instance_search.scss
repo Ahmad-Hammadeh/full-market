@@ -1,0 +1,19 @@
+.search-page {
+    .search-header {
+        margin-bottom: $short-distance;
+    }
+    .search-stats {
+        margin-bottom: $short-distance;
+    }
+    .products {
+        margin-bottom: $short-distance;
+        .search-item {
+            width: auto;
+            margin-top: 0;
+            margin-left: 0;
+            padding: 0 1rem;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

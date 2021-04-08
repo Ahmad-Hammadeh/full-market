@@ -1,0 +1,17 @@
+.my-profile {
+    min-height: $page-with-breadcrumb-height;
+    display: flex;
+    align-items: center;
+    .row {
+        justify-content: center;
+        .left-menu {
+            a {
+                opacity: .5;
+                &:hover,
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

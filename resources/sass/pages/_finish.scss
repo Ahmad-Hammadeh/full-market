@@ -1,0 +1,33 @@
+.finish {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .finish-popup {
+        max-width: 60%;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        padding: 0 40px 40px;
+        text-align: center;
+        @media (max-width: $phone-width) {
+            max-width: 100%;
+        }
+        .correct-signal {
+            .fa-check {
+                border: 1px solid $light-green;
+                border-radius: 50%;
+                padding: $little-distance;
+                position: relative;
+                top: -48px;
+                background: #fff;
+                color: $light-green;
+            }
+        }
+        p {
+            margin-bottom: $short-distance;
+        }
+        .finish-actions {
+            a {}
+        }
+    }
+}

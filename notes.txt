@@ -1,0 +1,3 @@
+To Format Money We Used Two Ways:
+1- In Custom Blade Directive Inside AppServiceProvider.php File > For Money Formatting Inside Blade Files
+2- In Custom Javascript function Iside Money_format.blade.php File > For Money Formatting Inside Js Files

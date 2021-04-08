@@ -1,0 +1,128 @@
+ol,
+ul,
+dl {
+    margin: 0;
+}
+
+// Global Classes
+.section {
+    padding-top: $short-distance;
+    padding-bottom: $short-distance;
+}
+
+.section-title,
+.section-desc {
+    margin-bottom: $medium-distance;
+}
+
+.section-desc {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $phone-width) {
+        max-width: 100%;
+    }
+}
+
+.products-table {
+    thead {
+        th {
+            text-align: center;
+        }
+    }
+    tr {
+        td {
+            max-width: 100px;
+            height: 100px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .image {
+            img {
+                height: 100%;
+            }
+        }
+        .details {
+            .name {}
+            .price {}
+        }
+        .cart-action {
+            button {
+                border: none;
+                color: $blue;
+                &:hover {
+                    color: $indigo;
+                }
+            }
+        }
+        .quantity {
+            select {}
+        }
+        .subtotatal {}
+    }
+}
+
+.products {
+    .product {
+        padding: $short-distance;
+        transition: all .5s ease-in-out;
+        margin-bottom: 25px;
+        .img {
+            height: 10rem;
+            margin-bottom: $short-distance;
+        }
+        .name {}
+        .price {
+            margin-bottom: $short-distance;
+            color: $indigo;
+        }
+        .add-to-card {}
+        &:hover {
+            border-color: $light-green;
+        }
+    }
+}
+
+.message {
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+button[type=submit]:focus,
+input[type="text"] {
+    outline: none;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+.form-control:focus {
+    box-shadow: 0 1px 3px 0 $blue;
+}
+
+.user-menu {
+    @media (max-width: $phone-width) {
+        margin-bottom: $medium-distance;
+    }
+    li {
+        @media (max-width: $phone-width) {
+            display: inline-block;
+        }
+        a {
+            display: inline-block;
+            padding: 20px 0;
+            border-bottom: 1px solid $cyan;
+            @media (max-width: $phone-width) {
+                padding: 0 20px;
+                border-#{right}: 1px solid $cyan;
+                border-bottom: none;
+            }
+        }
+    }
+}
