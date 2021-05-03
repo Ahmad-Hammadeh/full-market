@@ -1,48 +1,17 @@
 ul,
 ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .edit-add .category-checkbox input[type=checkbox] {
-    margin-right: 5px;
-    margin-top: -3px;
-    cursor: pointer;
+  margin-right: 5px;
+  margin-top: -3px;
+  cursor: pointer;
 }
 
 .edit-add .category-checkbox label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.table tbody tr td {
-    vertical-align: middle;
-}
-
-.product-image img {
-    height: 20rem;
-}
-
-.popup-image .modal-header,
-.popup-image .modal-body {
-    padding: 0;
-}
-
-.popup-image .modal-header .close {
-    position: absolute;
-    right: 0;
-    margin-top: 0;
-    color: #fff;
-    background-color: #f00;
-    padding: 5px;
-    z-index: 1;
-    display: none;
-}
-
-.popup-image .modal-content:hover .modal-header .close {
-    display: block;
-}
-
-.popup-image .modal-content img {
-    margin: auto;
-}

@@ -10,7 +10,7 @@
 
 <div class="search-page section">
     <div class="container">
-        <h2 class="search-header">@lang('frontend.search_resaults')</h2>
+        <h2 class="search-header">@lang('frontend.search_results')</h2>
         @if( $products->count() > 0 )
         <small class="search-count">{{ $products->total() }} @lang('frontend.result_s')</small>
         <div class="table-responsive">

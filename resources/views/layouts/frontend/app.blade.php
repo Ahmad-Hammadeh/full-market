@@ -31,8 +31,6 @@
 
         @include('layouts.frontend.partials.nav')
 
-        @include('layouts.frontend.partials.alerts')
-
         @yield('content')
 
         @include('layouts.frontend.partials.footer')
