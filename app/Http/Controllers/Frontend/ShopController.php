@@ -117,27 +117,27 @@ class ShopController extends Controller
     //     return view('frontend.search_results', compact('products'));
     // }
 
-    /**
-     * Show the Instance Search resaults.
-     * Using Vanila Js
-     *
-     * @param  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function instance_search()
-    {
-        return view('frontend.instance_search_results');
-    }
-
     // /**
     //  * Show the Instance Search resaults.
-    //  * Using Vue Js
+    //  * Using Vanila Js
     //  *
     //  * @param  $request
     //  * @return \Illuminate\Http\Response
     //  */
-    // public function vue_search()
+    // public function instance_search()
     // {
-    //     return view('frontend.vue_search_results');
+    //     return view('frontend.instance_search_results');
     // }
+
+    /**
+     * Show the Instance Search resaults.
+     * Using Vue Js
+     *
+     * @param  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function vue_search()
+    {
+        return view('frontend.vue_search_results');
+    }
 }

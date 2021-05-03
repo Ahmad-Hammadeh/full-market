@@ -14,7 +14,7 @@
         </div>
         <div class="search-box">
             @include('layouts.frontend.partials.search')
-            {{-- <auto-complete></auto-complete> --}}
+            <auto-complete></auto-complete>
         </div>
     </div>
 </div>
