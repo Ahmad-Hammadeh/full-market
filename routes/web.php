@@ -21,8 +21,8 @@ Route::group(['namespace' => 'Frontend'], function () {
 
     Route::get('/shop', 'ShopController@index')->name('shop.index');
     Route::get('/shop/{slug}', 'ShopController@show')->name('shop.show');
-    // Route::get('/search', 'ShopController@search')->name('shop.search');
-    Route::get('/instance_search', 'ShopController@instance_search')->name('shop.instance_search'); // Vanila Js Instant Search
+    Route::get('/search', 'ShopController@search')->name('shop.search');
+    // Route::get('/instance_search', 'ShopController@instance_search')->name('shop.instance_search'); // Vanila Js Instant Search
     // Route::get('/vue_search', 'ShopController@vue_search')->name('shop.vue_search'); // Vue Js Instant Search
 
 

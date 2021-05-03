@@ -2,14 +2,14 @@
 @include('client_side.money_format')
 
 
-{{-- <form action="{{ route('shop.search') }}" method="get">
+<form action="{{ route('shop.search') }}" method="get">
     <input class="form-control" type="search" name="search" value="{{ request('search') }}"
         placeholder="&#xf002; @lang('frontend.search_for_products')">
-</form> --}}
+</form>
 
 
 
-@push('extra-css')
+{{-- @push('extra-css')
 <!-- Include stylesheet -->
 <link href="{{ asset('css/autocomplete.css') }}" rel=stylesheet />
 @endpush
@@ -31,4 +31,4 @@
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3/dist/algoliasearchLite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script src="{{ asset('js/autocomplete.js') }}"></script>
-@endpush
+@endpush --}}

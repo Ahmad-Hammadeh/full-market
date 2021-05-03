@@ -96,38 +96,38 @@ class ShopController extends Controller
         return view('frontend.product', compact('product', 'similar_products', 'stock_status', 'stock_class'));
     }
 
-    // /**
-    //  * Show the search resaults.
-    //  *
-    //  * @param  $request
-    //  * @return \Illuminate\Http\Response
-    //  */
-    // public function search(Request $request)
-    // {
-    //     $request->validate([
-    //         'search' => 'required|min:3'
-    //     ]);
-
-    //     // $products = Product::where('name', 'like', "%$request->search%")
-    //     //                     ->orWhere('details', 'like', "%$request->search%")
-    //     //                     ->orWhere('description', 'like', "%$request->search%")->paginate(10);
-
-    //     $products = Product::search($request->search)->paginate(10);
-
-    //     return view('frontend.search_results', compact('products'));
-    // }
-
     /**
-     * Show the Instance Search resaults.
-     * Using Vanila Js
+     * Show the search resaults.
      *
      * @param  $request
      * @return \Illuminate\Http\Response
      */
-    public function instance_search()
+    public function search(Request $request)
     {
-        return view('frontend.instance_search_results');
+        $request->validate([
+            'search' => 'required|min:3'
+        ]);
+
+        // $products = Product::where('name', 'like', "%$request->search%")
+        //                     ->orWhere('details', 'like', "%$request->search%")
+        //                     ->orWhere('description', 'like', "%$request->search%")->paginate(10);
+
+        $products = Product::search($request->search)->paginate(10);
+
+        return view('frontend.search_results', compact('products'));
     }
+
+    // /**
+    //  * Show the Instance Search resaults.
+    //  * Using Vanila Js
+    //  *
+    //  * @param  $request
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function instance_search()
+    // {
+    //     return view('frontend.instance_search_results');
+    // }
 
     // /**
     //  * Show the Instance Search resaults.
