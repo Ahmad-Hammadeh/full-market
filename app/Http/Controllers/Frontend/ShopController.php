@@ -96,26 +96,26 @@ class ShopController extends Controller
         return view('frontend.product', compact('product', 'similar_products', 'stock_status', 'stock_class'));
     }
 
-    /**
-     * Show the search resaults.
-     *
-     * @param  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function search(Request $request)
-    {
-        $request->validate([
-            'search' => 'required|min:3'
-        ]);
+    // /**
+    //  * Show the search resaults.
+    //  *
+    //  * @param  $request
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function search(Request $request)
+    // {
+    //     $request->validate([
+    //         'search' => 'required|min:3'
+    //     ]);
 
-        // $products = Product::where('name', 'like', "%$request->search%")
-        //                     ->orWhere('details', 'like', "%$request->search%")
-        //                     ->orWhere('description', 'like', "%$request->search%")->paginate(10);
+    //     // $products = Product::where('name', 'like', "%$request->search%")
+    //     //                     ->orWhere('details', 'like', "%$request->search%")
+    //     //                     ->orWhere('description', 'like', "%$request->search%")->paginate(10);
 
-        $products = Product::search($request->search)->paginate(10);
+    //     $products = Product::search($request->search)->paginate(10);
 
-        return view('frontend.search_results', compact('products'));
-    }
+    //     return view('frontend.search_results', compact('products'));
+    // }
 
     /**
      * Show the Instance Search resaults.
@@ -129,15 +129,15 @@ class ShopController extends Controller
         return view('frontend.instance_search_results');
     }
 
-    /**
-     * Show the Instance Search resaults.
-     * Using Vue Js
-     *
-     * @param  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function vue_search()
-    {
-        return view('frontend.vue_search_results');
-    }
+    // /**
+    //  * Show the Instance Search resaults.
+    //  * Using Vue Js
+    //  *
+    //  * @param  $request
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function vue_search()
+    // {
+    //     return view('frontend.vue_search_results');
+    // }
 }
